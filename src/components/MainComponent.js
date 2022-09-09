@@ -17,7 +17,7 @@ export default function MainComponent() {
   useEffect(() =>{
     if (!localStorage.getItem('score'))
     localStorage.setItem('score',0)
-    fetch("http://ddragon.leagueoflegends.com/cdn/12.17.1/data/en_US/champion.json")
+    fetch("https://ddragon.leagueoflegends.com/cdn/12.17.1/data/en_US/champion.json")
     .then(response => response.json())
     .then(data => {
         setHeroes(Object.keys(data.data));
