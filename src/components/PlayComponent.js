@@ -33,7 +33,7 @@ export default function PlayComponent(props) {
         {!loading && props.champion ? 
         <div className="max-h max-w flex justify-center items-center flex-col">
             <h4 className="text-white sm:text-xl text-sm mb-8">What's the name of this spell ?</h4>
-           <img className="h-24 w-24" src={"http://ddragon.leagueoflegends.com/cdn/12.17.1/img/spell/"+spell.img} alt="spell"></img>
+           <img className="h-24 w-24" src={"https://ddragon.leagueoflegends.com/cdn/12.17.1/img/spell/"+spell.img} alt="spell"></img>
            <div  className="mt-8 flex items-center">
            <input className="text-white p-2 rounded-bl-lg rounded-tl-lg elem-lighter-blue" type="text" value={name} onChange={ event => setName(event.target.value)} placeholder="Spell Name"></input>
            <button className=" min-h-full p-2 text-white bg-dark-blue rounded-tr-lg rounded-br-lg" onClick={checkAnswer}>
