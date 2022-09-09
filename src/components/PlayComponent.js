@@ -8,7 +8,7 @@ export default function PlayComponent(props) {
     const [isWrong,setIsWrong] = useState(false);
     const [spellNumber,setSpellNumber] = useState( Math.floor(Math.random() * 4));
     const checkAnswer = () =>{
-        if (name.toLowerCase() === spell.name.toLowerCase())
+        if (name.toLowerCase().trim() === spell.name.toLowerCase())
         {    
             props.onClick();
             setSpellNumber(Math.floor(Math.random() * 4) + 1);
@@ -19,6 +19,7 @@ export default function PlayComponent(props) {
         }
         else{
             setIsWrong(true);
+            setName('');
         }
     }
     useEffect(() =>{
