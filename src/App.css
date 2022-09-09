@@ -26,7 +26,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+  background: hsl(207, 26%, 12%);
 }
 
 /* Handle */
@@ -39,4 +39,7 @@
 }
 .scl-hov:hover{
   transform:scale(1.1);
+}
+.bg-dark-blue{
+  background:hsl(207, 26%, 17%)
 }

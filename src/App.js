@@ -8,7 +8,8 @@ import { faBook } from '@fortawesome/free-solid-svg-icons'
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import { faQuestion } from '@fortawesome/free-solid-svg-icons'
-library.add(faUserSecret,faFire,faHammer,faBook,faTimesCircle,faCircleCheck,faQuestion)
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
+library.add(faUserSecret,faFire,faHammer,faBook,faTimesCircle,faCircleCheck,faQuestion,faCaretRight)
 function App() {
   return (
     <div>

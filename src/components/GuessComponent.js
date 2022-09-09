@@ -1,5 +1,5 @@
 import InfoCard from "./InfoCard"
-export default function GuessComponent(){
+export default function GuessComponent(props){
     
     const modes =[
         {   
@@ -27,7 +27,7 @@ export default function GuessComponent(){
                 Welcome To Guess The Champ ! 
                 <div className="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-4 flex  sm:gap-y-2 sm:gap-x-2 gap-x-3 md:gap-x-6 ">
                 {
-                    modes.map((mode,index) => <InfoCard textMode={mode.textMode} key={index} imageMode={mode.imageMode}/>)
+                    modes.map((mode,index) => <InfoCard textMode={mode.textMode} onClick={() => props.onClick()} key={index} imageMode={mode.imageMode}/>)
                 }
                 </div>
             </h1>
