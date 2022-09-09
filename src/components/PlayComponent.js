@@ -8,8 +8,6 @@ export default function PlayComponent(props) {
     const [isWrong,setIsWrong] = useState(false);
     const [spellNumber,setSpellNumber] = useState( Math.floor(Math.random() * 4));
     const checkAnswer = () =>{
-        console.log(spell.name)
-        console.log(props.champion)
         if (name.toLowerCase().trim() === spell.name.toLowerCase())
         {  
             props.onClick();
